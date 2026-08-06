@@ -1,5 +1,5 @@
 # build output
-dist/
+# dist/ (served via Pages — committed)
 # generated types
 .astro/
 
