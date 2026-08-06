@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# site build inputs — never commit raw data sources
+# (public_ledger.json is generated; committed copy lives in dist/ only)
+*.jsonl
+.hypothesis*
