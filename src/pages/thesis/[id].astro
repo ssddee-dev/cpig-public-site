@@ -34,6 +34,13 @@ a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}.ev{marg
 </style></head><body><main class="wrap">
 <p class="meta"><a href={`${import.meta.env.BASE_URL}`}>← 원장 목록</a></p>
 <h1>{t.name_kr}</h1>
+{t.status === '폐기' && t.disposal ? (
+  <div class="card" style="border-color:#5e2020">
+    <p style="color:var(--red)"><b>폐기 논지</b> — {t.disposal.type} · {t.disposal.date}</p>
+    <p class="meta">{t.disposal.reason}</p>
+    <p class="meta">{t.disposal.note}</p>
+  </div>
+) : ''}
 <p class="meta">{t.direction} · {t.exposure_node} · 등록 {t.registered.date} · 다음 채점 {t.next_scoring}</p>
 <p>{t.public_summary}</p>
 <h2>이 논지가 틀렸다는 신호 (반증)</h2>

@@ -230,9 +230,13 @@
       "summary": "메모리 원가 급등의 소비자 전가 이중 축: 중저가 = 가격발 수요 파괴(AMD 게이밍), 프리미엄 = 원가·공급 압박(QCOM 스마트폰). 메모리 감속 이후에도 시차 반영.",
       "public_summary": "AI 수요가 메모리 공급을 빨아들이면서, 그 비용이 결국 소비자 제품 가격으로 전가되고 있다. 저가 제품은 가격이 오르니 수요가 줄고, 고가 제품은 부품값 상승과 공급 부족으로 생산이 막히는 이중 압박이다. 그래서 AI의 성장이 소비자 기기 업체들의 실적에는 오히려 역풍이 될 수 있다고 본다.",
       "falsification": {
-        "core": "3분기 콜에서 AMD 게이밍 매출 감소가 예상보다 완만하거나 PC 출하가 하향 계획 대비 상회하면 폐기 (중저가 수요 파괴 반증).",
+        "core": "3분기 콜에서 AMD 경영진이 PC 출하 계획을 상향하거나 메모리 원가의 수요 영향 완화를 명시하면 폐기 (중저가 수요 파괴 반증).",
         "secondary": [
           "퀄컴이 핸드셋 물량 가이던스를 상향하거나 재고 경계 발언을 철회"
+        ],
+        "source_evidence_id": [
+          "T-20260803-004-ev0",
+          "T-20260803-004-ev1"
         ]
       },
       "confirmation": [],
@@ -254,7 +258,7 @@
       "registered": {
         "date": "2026-08-04",
         "commit": "b973760",
-        "note": "최초 등록: 2026-08-04 · b973760 / 발행 전 수정: 2026-08-06 · 1009a0b / 발행 후 변경 없음 / 감사 정정: 2026-08-08 — 대상 축소 (AMD·QCOM만, 삼성전자·AAPL·DELL·HPQ 증거 0건 제외), 애플 반증 조건 삭제 / 감사 정정 추가: 2026-08-08 — 반증 임계값 -20% 근거 부재로 수치 제거 (Rule5)"
+        "note": "최초 등록: 2026-08-04 · b973760 / 발행 전 수정: 2026-08-06 · 1009a0b / 발행 후 변경 없음 / 감사 정정: 2026-08-08 — 대상 축소 (AMD·QCOM만, 삼성전자·AAPL·DELL·HPQ 증거 0건 제외), 애플 반증 조건 삭제 / 감사 정정 추가: 2026-08-08 — 반증 임계값 -20% 근거 부재로 수치 제거 (Rule5) / 반증 재작성: 2026-08-08 — 정성 표현(완만) 제거, 관측 가능 이벤트 조건으로 전환 (수치 근거 부재, Rule5 준수)"
       },
       "next_scoring": "2026-10",
       "evidence": [
@@ -263,14 +267,16 @@
           "label": "경영진 직접 발언",
           "quarter": "q1-2026",
           "fact": "메모리 원가 상승으로 하반기 게임용 부품 수요가 타격을 받을 것으로 전망.",
-          "fact_original": "We are planning for second half PC shipments to be lower due to higher memory and component costs"
+          "fact_original": "We are planning for second half PC shipments to be lower due to higher memory and component costs",
+          "evidence_id": "T-20260803-004-ev0"
         },
         {
           "target": "QCOM",
           "label": "교차 기업 확인",
           "quarter": "q1-2026",
           "fact": "메모리 부족·가격 상승으로 스마트폰 공급이 제약될 것이라고 밝힘.",
-          "fact_original": "constrained by the availability and pricing of memory, particularly DRAM. As memory suppliers redirect manufacturing capacity to HBM to meet AI data center demand"
+          "fact_original": "constrained by the availability and pricing of memory, particularly DRAM. As memory suppliers redirect manufacturing capacity to HBM to meet AI data center demand",
+          "evidence_id": "T-20260803-004-ev1"
         }
       ],
       "source_meta": {

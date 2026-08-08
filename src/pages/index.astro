@@ -7,6 +7,7 @@ const cards = ledger.map(t => ({
   id: t.id_short, name: t.name_kr, dir: t.direction, node: t.exposure_node,
   summary: t.public_summary, date: t.registered.date, next: t.next_scoring,
   tickers: t.tickers_kr.join(', '), icon: DIR_ICON[t.direction]||'',
+  status: t.status || '',
   cls: t.direction.includes('상방')?'up':t.direction.includes('하방')?'down':t.direction.includes('중립')?'mid':'stru'
 }));
 ---
@@ -48,6 +49,7 @@ footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);color:v
     <span class={`dir ${t.cls}`}>{t.icon} {t.dir}</span>
     <span class="badge">{t.node}</span>
     <h2 style="margin-top:8px"><a href={`${import.meta.env.BASE_URL}thesis/${t.id}/`}>{t.name}</a></h2>
+    {t.status === '폐기' ? <span class="badge" style="color:var(--red);border-color:#5e2020">폐기 · 등록 품질 실패</span> : ''}
     <p>{t.summary}</p>
     <p class="meta">등록 {t.date} · 다음 채점 {t.next} · {t.tickers}</p>
   </div>
