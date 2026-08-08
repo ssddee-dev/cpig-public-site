@@ -233,10 +233,6 @@
         "core": "3분기 콜에서 AMD 경영진이 PC 출하 계획을 상향하거나 메모리 원가의 수요 영향 완화를 명시하면 폐기 (중저가 수요 파괴 반증).",
         "secondary": [
           "퀄컴이 핸드셋 물량 가이던스를 상향하거나 재고 경계 발언을 철회"
-        ],
-        "source_evidence_id": [
-          "T-20260803-004-ev0",
-          "T-20260803-004-ev1"
         ]
       },
       "confirmation": [],
@@ -267,16 +263,14 @@
           "label": "경영진 직접 발언",
           "quarter": "q1-2026",
           "fact": "메모리 원가 상승으로 하반기 게임용 부품 수요가 타격을 받을 것으로 전망.",
-          "fact_original": "We are planning for second half PC shipments to be lower due to higher memory and component costs",
-          "evidence_id": "T-20260803-004-ev0"
+          "fact_original": "We are planning for second half PC shipments to be lower due to higher memory and component costs"
         },
         {
           "target": "QCOM",
           "label": "교차 기업 확인",
           "quarter": "q1-2026",
           "fact": "메모리 부족·가격 상승으로 스마트폰 공급이 제약될 것이라고 밝힘.",
-          "fact_original": "constrained by the availability and pricing of memory, particularly DRAM. As memory suppliers redirect manufacturing capacity to HBM to meet AI data center demand",
-          "evidence_id": "T-20260803-004-ev1"
+          "fact_original": "constrained by the availability and pricing of memory, particularly DRAM. As memory suppliers redirect manufacturing capacity to HBM to meet AI data center demand"
         }
       ],
       "source_meta": {
