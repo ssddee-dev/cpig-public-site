@@ -46,6 +46,7 @@ a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}.ev{marg
 <h2>이 논지가 틀렸다는 신호 (반증)</h2>
 <div class="card"><p>{fals.core || ''}</p>{(fals.secondary||[]).map(s => <p class="meta">· {s}</p>)}</div>
 {(t.risk_context||[]).length ? <><h2>위험 맥락 (직접 반증 아님)</h2><div class="card">{(t.risk_context||[]).map(c => <p class="meta">· {c}</p>)}</div></> : ''}
+{t.alternative_explanation ? <><h2>대안 설명 (결과가 나와도 다른 원인일 수 있음)</h2><div class="card"><p class="meta">{t.alternative_explanation}</p></div></> : ''}
 {(t.confirmation && (Array.isArray(t.confirmation) ? t.confirmation.length : (t.confirmation.core || (t.confirmation.secondary||[]).length))) ? <>
   <h2>논지가 맞다면 보이는 신호 (확인)</h2><div class="card">
   {Array.isArray(t.confirmation) ? t.confirmation.map(c => <p>· {c}</p>)

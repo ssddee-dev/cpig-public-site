@@ -590,7 +590,8 @@
       ],
       "context_entities": [],
       "first_review": "2026-10",
-      "decision_horizon": "2027-Q2"
+      "decision_horizon": "2027-Q2",
+      "alternative_explanation": "신규 수주 증가율 급감 시 — 프리미엄 축소의 원인이 공급 확대가 아니라 수요 약화일 수 있음."
     },
     {
       "id_short": "T-KR-001",
