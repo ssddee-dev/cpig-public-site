@@ -45,7 +45,12 @@ a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}.ev{marg
 <p>{t.public_summary}</p>
 <h2>이 논지가 틀렸다는 신호 (반증)</h2>
 <div class="card"><p>{fals.core || ''}</p>{(fals.secondary||[]).map(s => <p class="meta">· {s}</p>)}</div>
-{(t.confirmation||[]).length ? <><h2>논지가 맞다면 보이는 신호 (확인)</h2><div class="card">{(t.confirmation||[]).map(c => <p>· {c}</p>)}</div></> : ''}
+{(t.risk_context||[]).length ? <><h2>위험 맥락 (직접 반증 아님)</h2><div class="card">{(t.risk_context||[]).map(c => <p class="meta">· {c}</p>)}</div></> : ''}
+{(t.confirmation && (Array.isArray(t.confirmation) ? t.confirmation.length : (t.confirmation.core || (t.confirmation.secondary||[]).length))) ? <>
+  <h2>논지가 맞다면 보이는 신호 (확인)</h2><div class="card">
+  {Array.isArray(t.confirmation) ? t.confirmation.map(c => <p>· {c}</p>)
+   : <><p>{t.confirmation.core || ''}</p>{(t.confirmation.secondary||[]).map(c => <p class="meta">· {c}</p>)}</>}
+  </div></> : ''}
 <h2>형성 증거</h2>
 {t.evidence.map(e => (
   <div class="ev"><span class="lbl">{e.label}</span><span class="meta">{e.quarter} · {e.target}</span><p>{e.fact}</p>{e.fact_original ? <p class="orig">원문: {e.fact_original}</p> : ''}</div>
